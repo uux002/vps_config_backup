@@ -1,0 +1,10 @@
+[program:fredshao_blog]
+command = /home/fredshao/web/www/app.py
+directory = /home/fredshao/web/www
+user = www-data
+startsecs = 3
+
+redirect_stderr = true
+stdout_logfile_maxbytes = 50MB
+stdout_logfile_backups = 10
+stdout_logfile = /home/fredshao/log/blog.log
